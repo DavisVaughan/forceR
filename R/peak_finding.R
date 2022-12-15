@@ -127,7 +127,7 @@ find_strongest_peaks <- function(df,
     # plot(curr.plot.window$t, curr.plot.window$force, type="l")
 
     curr.specimen <- curr.plot.window %>%
-      slice(n=1) %>%
+      slice(1) %>%
       pull(specimen)
 
     threshold <- initial.threshold * max(curr.plot.window$force)
